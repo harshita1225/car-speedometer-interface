@@ -10,17 +10,18 @@ const reducer = (state, action) => {
   switch (action.type) {
     case "onOff":
       if (!state.switchOn && state.speed === 0) {
-        return (state = { ...state, switchOn: !state.switchOn });
+        return { ...state, switchOn: true };
+      } else if (state.switchOn && state.speed !== 0) {
+        return state;
       } else {
-        alert("cannot start engine");
+        return { ...state, switchOn: false };
       }
-      return state;
     case "brake":
-      if (state.speed > 0) {
-        return (state = {
+      if (state.switchOn && state.speed > 0) {
+        return {
           ...state,
-          speed: state.speed - 5,
-        });
+          speed: state.speed - 10,
+        };
       } else {
         alert("cannot brake");
       }
@@ -28,18 +29,18 @@ const reducer = (state, action) => {
 
     case "accelerate":
       if (state.switchOn && state.speed < 240) {
-        return (state = {
+        return {
           ...state,
-          speed: state.speed + 5,
-        });
+          speed: state.speed + 10,
+        };
       } else if (state.speed === 240) {
         alert("Yor are driving at Maximum speed");
       } else {
         alert("cannot accelerate");
       }
       return state;
+
     default:
-      alert("Invalid request");
       return state;
   }
 };

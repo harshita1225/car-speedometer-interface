@@ -3,7 +3,9 @@ import ReactSpeedometer from "react-d3-speedometer";
 import { CarContext } from "./CarContext";
 
 export default function Car() {
-  const [state, dispatch] = useContext(CarContext);
+  const { state, dispatch } = useContext(CarContext);
+
+  console.log(state);
 
   return (
     <div className="car">
