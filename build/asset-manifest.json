@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/car-speedometer-interface/static/css/main.19be0478.css",
+    "main.js": "/car-speedometer-interface/static/js/main.6c97954f.js",
+    "index.html": "/car-speedometer-interface/index.html",
+    "main.19be0478.css.map": "/car-speedometer-interface/static/css/main.19be0478.css.map",
+    "main.6c97954f.js.map": "/car-speedometer-interface/static/js/main.6c97954f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19be0478.css",
+    "static/js/main.6c97954f.js"
+  ]
+}
