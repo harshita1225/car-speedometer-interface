@@ -2,7 +2,7 @@
 
 ## Link
 
-- Live Site URL: []()
+- Live Site URL: [https://harshita1225.github.io/car-speedometer-interface/](https://harshita1225.github.io/car-speedometer-interface/)
 
 ### The car has the following values, which should be displayed on the "speedometer":
 
@@ -14,6 +14,17 @@ The car has the following functions:
 - turn on/off
 - accelerate
 - brake
+
+### screenshots
+
+- car interface
+  ![car turn on/ off](./images/Screenshot%20from%202022-10-26%2021-53-02.png)
+
+-car interface
+![car accelerate](./images/Screenshot%20from%202022-10-26%2021-53-47.png)
+
+- car interface
+  ![car interface](./images/Screenshot%20from%202022-10-26%2021-54-23.png)
 
 ## Requirements
 
